@@ -28,17 +28,17 @@ def insert_in_sorted_order(sorted_head, node_to_insert):
     current.next = node_to_insert
     return sorted_head
 
-if __name__ == "__main__":
-    ll = LinkedList()
-    ll.from_list([5, 3, 8, 4, 2])
+# if __name__ == "__main__":
+ll = LinkedList()
+ll.from_list([5, 3, 8, 4, 2])
 
-    print("До сортування:")
-    ll.print()
+print("До сортування:")
+ll.print()
 
-    sorted_head = insertion_sort_linked_list(ll.head)
+sorted_head = insertion_sort_linked_list(ll.head)
 
-    sorted_ll = LinkedList()
-    sorted_ll.head = sorted_head
+sorted_ll = LinkedList()
+sorted_ll.head = sorted_head
 
-    print("Після сортування:")
-    sorted_ll.print()
+print("Після сортування:")
+sorted_ll.print()
